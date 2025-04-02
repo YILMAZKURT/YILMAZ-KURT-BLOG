@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamik Blog</title>
+    <link rel="stylesheet" href="style.css">  <!-- style.css bağlanıyor -->
+</head>
+<body>
+    <div class="blog-container">
+        <h2>Blog Yazıları</h2>
+
+        <!-- Blog yazısı eklemek için form -->
+        <form id="new-post-form">
+            <input type="text" id="post-title" placeholder="Yazının Başlığı" required>
+            <textarea id="post-content" placeholder="Yazınızı buraya yazın..." required></textarea>
+            <button type="submit">Yeni Yazıyı Yayınla</button>
+        </form>
+
+        <!-- Blog yazılarının görüntüleneceği alan -->
+        <div id="blog-posts"></div>
+    </div>
+
+    <script src="script.js"></script>  <!-- script.js bağlanıyor -->
+</body>
+</html>
