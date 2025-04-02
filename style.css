@@ -1,72 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Genel Ayarlar */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.blog-container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.blog-post {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h3 {
-    font-size: 24px;
+body {
+    background-color: #f7f7f7;
     color: #333;
-}
-
-.blog-post p {
-    font-size: 16px;
-    color: #555;
     line-height: 1.6;
 }
 
-.blog-post small {
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content */
+.content {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #fafafa;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.post small {
     display: block;
-    font-size: 12px;
-    color: #777;
+    margin-top: 15px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1em;
 }
