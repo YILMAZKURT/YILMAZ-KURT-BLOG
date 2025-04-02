@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinamik Blog</title>
-    <link rel="stylesheet" href="style.css">  <!-- style.css bağlanıyor -->
+    <title>Yılmaz Kurt Blog</title>
 </head>
 <body>
-    <div class="blog-container">
-        <h2>Blog Yazıları</h2>
+    <header>
+        <h1>Yılmaz Kurt Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#post1">İlk Yazım</a></li>
+                <li><a href="#post2">İkinci Yazım</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="post1">
+        <h2>İlk Yazım</h2>
+        <p>Bugün çok güzel bir gün! İlk blog yazımı buraya yazıyorum.</p>
+        <small>Yazılma Tarihi: 02 Nisan 2025</small>
+    </section>
 
-        <!-- Blog yazısı eklemek için form -->
-        <form id="new-post-form">
-            <input type="text" id="post-title" placeholder="Yazının Başlığı" required>
-            <textarea id="post-content" placeholder="Yazınızı buraya yazın..." required></textarea>
-            <button type="submit">Yeni Yazıyı Yayınla</button>
-        </form>
-
-        <!-- Blog yazılarının görüntüleneceği alan -->
-        <div id="blog-posts"></div>
-    </div>
-
-    <script src="script.js"></script>  <!-- script.js bağlanıyor -->
+    <section id="post2">
+        <h2>İkinci Yazım</h2>
+        <p>Blogumu düzenlerken öğrendiğim yeni bilgiler...</p>
+        <small>Yazılma Tarihi: 03 Nisan 2025</small>
+    </section>
 </body>
 </html>
