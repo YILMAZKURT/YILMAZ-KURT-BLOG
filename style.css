@@ -1,3 +1,50 @@
+/* Genel Yapı ve Stil */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Başlık ve Buton */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Yazıların ve İçeriğin Düzeni */
+.content {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Filtreleme Kutusu */
 .filter {
     margin-bottom: 20px;
@@ -13,17 +60,72 @@
     margin-top: 10px;
 }
 
-/* Post Başlıkları */
+/* Postlar (Yazılar) */
+.posts {
+    margin-top: 20px;
+}
+
 .post {
-    background-color: #fafafa;
-    margin-bottom: 30px;
+    background-color: #fff;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;  /* Başlangıçta yazılar gizli */
 }
 
 .post h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 15px;
+}
+
+.post p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+.post small {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Yorum Bölümü */
+.comments {
+    margin-top: 30px;
+}
+
+#comment-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#submit-comment {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#submit-comment:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
